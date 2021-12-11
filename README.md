@@ -1,6 +1,6 @@
 # Guessing game
  
 `Latest Source code Update is at ==>>`
-Fr 10. Dez 23:52:52 CET 2021
+Sa 11. Dez 01:50:21 CET 2021
  
-21
+47
