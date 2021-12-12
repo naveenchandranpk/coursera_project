@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-ls > filescount
-var=$(cat filescount | wc -l)
+var=$(ls | wc -l)
+echo $var
 function userentry {
         echo ' '
 	echo "Guess the number of files in the current library"
@@ -29,12 +29,12 @@ if [[ $var -eq $entry ]]
 then
   echo " WINNER!!! You gueesed it right."  
   exit
-elif [[ $entry -lt $var-5 ]]  
+elif [[ $entry -lt $var ]]  
   then
     echo " Your Guess is too low. Better luck next time"
     userentry
     editcheck 
-elif [[ $entry -gt $var+5 ]] 
+elif [[ $entry -gt $var ]] 
   then 
     echo " Your Guess is too high. Better luck next time"
     userentry
